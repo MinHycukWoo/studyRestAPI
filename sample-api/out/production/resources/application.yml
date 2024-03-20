@@ -1,0 +1,18 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  application:
+    name: user-service
+  main:
+    allow-circular-references: true
+
+springdoc:
+  api-docs:
+    groups:
+      enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+    displayRequestDuration: true
+    groups-order: DESC
+
